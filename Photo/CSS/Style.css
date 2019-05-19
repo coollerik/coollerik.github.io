@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #eee;
+}
+
+main {
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+	background-color: grey;
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+.photo {
+	max-height: 345px;
+	max-width: 490px;
+	width: calc(95vw/2 - 10px);
+	height: calc(95vw / 2 / 16*14);
+	background-color: pink;
+	background-size: cover;
+	background-position: center;
+}
+.header{
+	width: 100%;
+	color: pink;
+	font-size: 100px;
+	text-align: center;
+	font-family: 'Cormorant Unicase', serif;
+}
+.photo-vertikal{
+	max-height: 800px;
+	max-width: 480px;
+	width: calc(95vw/2 - 10px);
+	height: calc(95vw / 2 / 20*20);
+	background-color: pink;
+	margin: 5px;
+	background-size: cover;
+}
+main a {
+	display: block;
+	margin: 5px;
+	transition: 0.5s;
+}
+
+footer a {
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	padding: 40px;
+}
+header {
+	max-width: 1000px;
+	margin: auto;
+}
+header img {
+	height: 650px;
+}
+
+@media (max-width: 768px) {
+	.photo {
+		max-height: initial;
+	    max-width: initial;
+	    width: 95vw;
+	    height: calc(95vw / 16 * 9)
+
+	 }
+	 header img {
+	 	height: 300px;
+	 }
+	 main a {
+	 	margin: 5px 0;
+	 }
+}
+@media (min-width: 1200px) {
+	main a:hover {
+	opacity: 1;
+	z-index: 100;
+	box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.4);
+}
+main a {
+	opacity: 0.6;
+}
+}
